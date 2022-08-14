@@ -10,7 +10,7 @@ node
  {
   sh "${mavenHome}/bin/mvn clean package"
  }
- /*
+ 
  stage('sonarqubereportExecution')
  {
   sh "${mavenHome}/bin/mvn sonar:sonar"
@@ -19,6 +19,7 @@ node
  {
   sh "${mavenHome}/bin/mvn deploy
  }
+ /*
  stage('deployAppIntoTomcatServer')
  {
  sshagent(['1f172b33-ca74-4d1d-8bb6-06ea15f9145f']) {
